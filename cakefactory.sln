@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cakefactory", "cakefactory.csproj", "{54764404-3107-4249-B14C-54759B2C8522}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cakefactoryTests", "..\cakefactoryTests\cakefactoryTests.csproj", "{1514B06C-32A2-4975-934A-CEAED68BC990}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cakefactoryTests", "..\cakefactoryTests\cakefactoryTests.csproj", "{1514B06C-32A2-4975-934A-CEAED68BC990}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
