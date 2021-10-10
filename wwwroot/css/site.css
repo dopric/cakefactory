@@ -1,71 +1,183 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+﻿@import 'bootstrap.css';
+/*@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro%3Aregular%2Citalic%2C700%2C200%2C300%2C300italic%2C900%7CRaleway%3Aregular%2C700%2C200%2C300%2C900%26subset%3Dlatin%2C&ver=2.1.1');*/
 
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+/*body {
+    color: #333;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.625;
+}*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway","Helvetica Neue",sans-serif;
 }
 
-/* Provide sufficient contrast against white background */
+h2 {
+    margin-top: 10px;
+}
+
 a {
-  color: #0366d6;
+    color: #e74797;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    a:hover {
+        color: #111;
+    }
+
+/*img[src=""] {
+    visibility: hidden;
+}*/
+
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.test {
+    /*background: url('../img/chocolate-cake-with-chocolate-sprinkles.jpg') no-repeat !important;*/
+    background: url("http://www.australia.com/contentimages/about-landscapes-nature.jpg") no-repeat !important;
+    background-size: cover;
+
+    border: 1px solid black;
+    border-radius: 10px;
+    min-height: 200px;
+    min-width: 400px;
+    height: 100px;
+}
+/*.main-logo {
+    line-height: 1.5;
+    padding: 20px;*/
+    /*margin-top: -120px;*/
+    /*background: url(~./img/chocolate-cake-with-chocolate-sprinkles.jpg) no-repeat !important;
+}*/
+/*
+    .main-logo a {
+        background: url(../img/chocolate-cake-with-chocolate-sprinkles.jpg) no-repeat !important;
+        display: inline-block;
+        width: 800px;
+        height: 230px;
+        margin-bottom: -10px;
+        color: rgba(0, 0, 0, 0);
+    }
+
+.navbar {
+    border-radius: 0;
+    border-bottom: 1px solid #777;
+    border-top: 1px solid #777;
+    min-height: inherit;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    .navbar, .navbar .btn-link {
+        font-weight: 400;
+        font-family: "Source Sans Pro","Helvetica Neue",sans-serif;
+        text-transform: uppercase;
+    }
+
+        .navbar form span {
+            text-transform: none;
+        }
+
+        .navbar .btn-link {
+            font-weight: 600;
+        }
+
+        .navbar a, .navbar .btn-link {
+            color: #333;
+            letter-spacing: 2px;
+            font-size: 12px;
+        }
+
+            .navbar a.active {
+                font-weight: 800;
+            }
+
+        .navbar .nav {
+            width: 60%;
+            margin: auto;
+            display: inline-table;
+        }
+
+            .navbar .nav li {
+                display: table-cell;
+                width: 1%;
+                float: none;
+            }
+
+        .navbar ul:last-child {
+            float: right;
+            width: 100px;
+        }
+
+.recipes .recipe {
+    height: 40em;
+    overflow: hidden;
+    text-align: center;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
+    .recipes .recipe .img {
+        width: auto;
+        height: 15em;
+    }
+
+    .recipes .recipe p {
+        text-align: justify;
+    }
+
+.btn.add-recipe {
+    float: right;
+    margin-top: -50px;
+    margin-right: 15px;
+}
+
+.directions li {
+    margin-bottom: 15px;
+}
+*/
+
+/**** Validation    ****/
+.field-validation-error {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 2px solid #d9534f;
+    background-color: #E6AFAD;
+}
+
+.validation-summary-errors {
+    color: #d9534f;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+/**** END: Validation ****/
+
+
+/**** Sticky footer ****/
 html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+    margin: 0;
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 80px;
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px; /* Vertically center the text there */
+    background-color: #f5f5f5;
 }
+/**** END: Sticky footer ****/

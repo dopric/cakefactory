@@ -547,6 +547,9 @@ nav.shrink .navbar-toggle {
 ||				16. Contact With us
 ==================================================*/
 
+.contact {
+    margin-top: 80px;
+}
 .contact .section-content
 {
 	color: #fff;
@@ -628,12 +631,20 @@ nav.shrink .navbar-toggle {
 /*=================================================
 ||				17. Footer
 ==================================================*/
+/**** Sticky footer ****/
+html {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+}
 
-footer
-{
+footer {
+    position: absolute;
+	bottom: 0;
 	background-color: #8BC34A;
 	color: #ffffff;
 	padding: 30px 0px;
+    width: 100%;
 }
 
 footer a
